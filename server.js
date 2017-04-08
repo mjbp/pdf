@@ -27,9 +27,9 @@ app.get('/ui', function(req, res) {
 
 
 app.post('/', function (req, res) {
-    createPDF(req.body.url)
+    createPDF(req.body['sp-url'])
         .then(pdf => {
-            let filename = url.parse(req.body.url).host.split('.').join('-');
+            let filename = url.parse(req.body['sp-url']).host.split('.').join('-');
             res.header('Content-type', 'application/pdf');
             res.header('Content-disposition', `inline; filename=${filename}.pdf`);
             res.attachment(`${filename}.pdf`);

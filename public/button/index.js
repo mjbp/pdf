@@ -1,0 +1,1 @@
+(function(){document.getElementById('sp-root').innerHTML = ['<form action="https://storm-pdf.herokuapp.com" method="post"><input type="hidden" name="sp-url" value="',window.location.href,'"><button class="sp-button">Get PDF</button></form>'].join('');})();
