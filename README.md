@@ -8,5 +8,5 @@ Test UI https://storm-pdf.herokuapp.com/ui
 
 Embed code for print button (with no default styles and a .sp-button className for customisation):
 ```
-<div id="sp-root"></div><script async src="/button/index.js"></script>
+<div id="sp-root"></div><script async src="https://storm-pdf.herokuapp.com/button/index.js"></script>
 ```
